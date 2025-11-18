@@ -1,10 +1,20 @@
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
+
+
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faChevronDown, faHamburger } from "@fortawesome/free-solid-svg-icons";
+
+
 export default function Home() {
   return (
 
     <main className="min-h-screen text-white bg-linear-to-br from-gray-800 via-gray to-gray-850">
 
 
-      <header className="sticky top-4 mx-auto px-6">
+      <header className="sticky top-4 mx-auto px-6 container">
         <div className="px-6 md:px-5 header-inner bg-black text-white-100 container mx-auto flex items-center justify-between p-4 shadow-md rounded-2xl">
 
           <a className="flex items-center space-x-2 text-white-100 hover:text-gray-300 transition duration-300">
@@ -22,21 +32,20 @@ export default function Home() {
             <a className="text-white-100 hover:text-gray-300 transition cursor-pointer">Contato</a>
           </nav>
 
-          <div className="actions hidden md:flex space-x-3">
+          <div className="actions hidden md:flex space-x-5">
             <button className="btn btn-pjt text-white-100 hover:text-gray-300 transition text-sm font-medium cursor-pointer">
               Projetos
             </button>
 
-            <a href="https://wa.me/message/KD2EVB6QSWXBI1" target="_blank" rel="noopener noreferrer">
-              <button className="btn btn-ctc bg-white hover:text-gray-700 text-black font-semibold py-2 px-4 rounded-lg text-sm transition duration-300 flex items-center space-x-1 shadow-md hover:shadow-lg cursor-pointer">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"></svg>
+              <button className="btn btn-ctc gap-2 bg-white hover:text-gray-700 text-black font-semibold py-2 px-4 rounded-lg text-sm transition duration-300 flex items-center space-x-1 shadow-md hover:shadow-lg cursor-pointer">
+               <FontAwesomeIcon icon={faChevronDown} className="text-1xl" />
                 Contratar
               </button>
-            </a>
+            
           </div>
 
-          <button className="menu-toggle md:hidden text-gray-800 text-2xl" aria-label="Abrir menu">
-            ☰
+          <button className="menu-toggle md:hidden text-gray-100 text-2xl cursor-pointer" aria-label="Abrir menu">
+            <FontAwesomeIcon icon={faBars} className="text-xl" />
           </button>
 
 
@@ -59,7 +68,7 @@ export default function Home() {
             </p>
 
             <div className="flex">
-              <button className="bg-gray-100 hover:bg-white-250 text-black font-bold py-2 px-4 mt-8 rounded-lg shadow-lg transform transition duration-150 hover:scale-105">Let's get started</button>
+              <button className="bg-gray-100 hover:bg-white-250 text-black font-bold py-2 px-4 mt-8 rounded-lg shadow-lg transform transition duration-150 hover:scale-105 cursor-pointer">Let's get started</button>
             </div>
 
           </div>
