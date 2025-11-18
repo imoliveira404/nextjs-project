@@ -4,8 +4,8 @@ export default function Home() {
     <main className="min-h-screen text-white bg-linear-to-br from-gray-800 via-gray to-gray-850">
 
 
-      <header className="sticky top-4 z-50">
-        <div className="header-inner bg-black text-white-100 container mx-auto flex items-center justify-between p-4 shadow-md rounded-2xl">
+      <header className="sticky top-4 mx-auto px-6">
+        <div className="px-6 md:px-5 header-inner bg-black text-white-100 container mx-auto flex items-center justify-between p-4 shadow-md rounded-2xl">
 
           <a className="flex items-center space-x-2 text-white-100 hover:text-gray-300 transition duration-300">
             <div className="logo flex items-center space-x-2">
@@ -44,7 +44,7 @@ export default function Home() {
 
       </header>
 
-      <section className="px-8 py-20">
+      <section className="px-6 md:px-10 py-20">
         <div className="max-w-6xl mx-auto flex justify-between items-center gap-16 px-4">
 
           <div className="flex-1 space-y-6 mt-8">
